@@ -7,6 +7,7 @@ import auth from "routes/auth";
 import cors from "cors";
 import {initSocket} from "./sockets/index";
 import { assertDatabaseConnectionOk } from 'db';
+require("dotenv").config({ __dirname });
 const app : Express = express(); // Remove the type annotation
 
 const server = http.createServer(app);

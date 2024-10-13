@@ -38,7 +38,7 @@ export const registerSchema = checkSchema({
 });
 
 export const validate = (validation: RunnableValidationChains<ValidationChain>) => {
-    return (req: Request, res: Response, next: NextFunction) => {
+    return (req: Request, res: Response, next: NextFunction) => { 
         validation.run(req).then((result) => {
             try {
                 validationResult(req).throw();       

@@ -10,10 +10,12 @@
     "migrate:undo": "npx sequelize-cli db:migrate:undo"
   },
   "_moduleAliases": {
-    "controllers": "./dist/controllers",
-    "routes": "./dist/routes",
-    "validators": "./dist/validators",
-    "db": "./dist/db"
+    "controllers": "./.dist/controllers",
+    "routes": "./.dist/routes",
+    "validators": "./.dist/validators",
+    "db": "./.dist/db",
+    "models": "./.dist/db/models",
+    "config": "./.dist/db/config"
   },
   "keywords": [],
   "author": "",
@@ -29,6 +31,7 @@
     "mongoose": "^8.7.1",
     "pg": "^8.13.0",
     "sequelize": "^6.37.4",
+    "sequelize-typescript": "^2.1.6",
     "socket.io": "^4.8.0"
   },
   "devDependencies": {

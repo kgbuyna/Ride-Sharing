@@ -1,8 +1,11 @@
-{
+const process = require('process')
+require("dotenv").config({ __dirname });
+
+module.exports = {
   "development": {
-    "username": "root",
-    "password": null,
-    "database": "database_development",
+    "username": "postgres",
+    "password": process.env.PG_PASSWORD,
+    "database": "ride-sharing",
     "host": "127.0.0.1",
     "dialect": "postgres"
   },
